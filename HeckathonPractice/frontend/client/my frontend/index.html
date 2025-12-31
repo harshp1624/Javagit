@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2 class="title">My Tasks</h2>
+
+  <ul id="taskList"></ul>
+
+  <!-- Bottom Buttons -->
+  <button class="fab-left" onclick="goFinished()">✔ Finished</button>
+  <button class="fab-right" onclick="openInput()">+ Add Task</button>
+
+  <!-- Floating Input Panel -->
+  <div id="inputBox" class="input-box">
+    <input type="text" id="taskInput" placeholder="Enter your task">
+    <button class="add-btn" onclick="addTask()">Add</button>
+    <button class="delete-btn" onclick="closeInput()">Cancel</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
